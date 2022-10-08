@@ -11,7 +11,7 @@ func main() {
 	api := gin.New()
 	api.GET("/", handle)
 
-	err := api.Run(":8080")
+	err := api.Run(":80")
 
 	if err != nil {
 		panic(err)
